@@ -11,7 +11,9 @@
 */
 
 /*
-  O operador |i| é uma forma curta de escrever uma função anônima (também conhecida como closure) em Rust. Em outras palavras, ele define uma função que não tem um nome e pode ser passada como argumento para outras funções, como a função map.
+  O operador |i| é uma forma curta de escrever uma função anônima (também conhecida como closure) em Rust. Em outras
+  palavras, ele define uma função que não tem um nome e pode ser passada como argumento para outras funções, como a
+  função map.
 */
 
 /*
@@ -22,9 +24,9 @@ use std::ops::RangeInclusive;
 
 pub fn sum_cubes(natural: u32) -> u32 {
     let range = |n: u32| -> RangeInclusive<u32> { 1..=n };
-    let cubic = 3;
+    let pow = |idx: u32| -> u32 { idx.pow(3) };
 
-    return range(natural).map(|idx| idx.pow(cubic)).sum();
+    return range(natural).map(pow).sum();
 }
 
 /*
