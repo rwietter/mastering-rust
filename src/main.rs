@@ -24,6 +24,5 @@ fn main() {
     borrowing::borrowing();
     exercices::cubes::sum_cubes(3);
     exercices::narcissistic::is_narcissistic(153);
-    exercices::narcissistic::is_narcissistic(407);
-    exercices::narcissistic::is_narcissistic(408);
+    exercices::hamming::init()
 }
