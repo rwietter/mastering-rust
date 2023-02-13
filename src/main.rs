@@ -20,9 +20,9 @@ fn main() {
     println!("{:?}", to_uppercase(r3));
     println!("{:?}", s);
 
-    ownership::ownership();
-    borrowing::borrowing();
-    exercices::cubes::sum_cubes(3);
-    exercices::narcissistic::is_narcissistic(153);
-    exercices::hamming::init()
+    // ownership::ownership();
+    // borrowing::borrowing();
+    // exercices::cubes::sum_cubes(3);
+    // exercices::narcissistic::is_narcissistic(153);
+    // exercices::hamming::init()
 }
